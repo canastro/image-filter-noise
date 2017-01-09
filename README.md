@@ -35,7 +35,7 @@ JS file:
 var imageNoise = require('image-noise');
 var nWorkers = 4;
 
-imageNoise(IMAGE_DATA, { noise: 30 }, nWorkers);
+imageNoise(IMAGE_DATA, { adjust: 30 }, nWorkers);
 ```
 
 ## Frequent questions:
@@ -63,7 +63,7 @@ element.setAttribute('src', options.url);
 var imageFilterCore = require('image-filter-core');
 var nWorkers = 4;
 
-imageNoise(IMAGE_DATA, { noise: 30 }, nWorkers)
+imageNoise(IMAGE_DATA, { adjust: 30 }, nWorkers)
     .then(function (result) {
         // result === ImageData object
         var image = document.createElement('img');
